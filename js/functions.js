@@ -162,7 +162,7 @@ function parseCard(player, number) {
 	if (element === null) {
 		return;
 	} else {
-		var elementname = element.src.replace('.svg', '').split("/cards")[1].replace("/", '');
+		var elementname = element.src.replace('.svg', '').split("/Cards")[1].replace("/", '');
 	}
 	// checks all cases. sets the primary/secondary
 	if (elementname.includes("+2")) {
