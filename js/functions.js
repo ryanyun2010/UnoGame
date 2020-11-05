@@ -92,14 +92,14 @@ function PutCardInElement(element, addorreplace, card, player, styles) {
 		// if statement to check player. 0 = middle.
 		if (player === 0) {
 			//replace element with card id = middlecard
-			element.innerHTML = '<img src="cards/' + card + '.svg" style="' + styles + '" id = "middlecard">';
+			element.innerHTML = '<img src="Cards/' + card + '.svg" style="' + styles + '" id = "middlecard">';
 
 		} else if (player === 1) {
 			// adds one to the current card holder for player 1.
 			PID("curcardsholder1").innerHTML = parseInt(PID("curcardsholder1").innerHTML) + 1;
 
 			// replace element with picture of card
-			element.innerHTML = '<img src="cards/' + card + '.svg" style="' + styles + '"onclick="' + "cardclicked('1" + PID("curcardsholder1").innerText + "')" + '"' + "id = 'player1" + PID("curcardsholder1").innerHTML + "'>";
+			element.innerHTML = '<img src="Cards/' + card + '.svg" style="' + styles + '"onclick="' + "cardclicked('1" + PID("curcardsholder1").innerText + "')" + '"' + "id = 'player1" + PID("curcardsholder1").innerHTML + "'>";
 			PID("player1cardsflipped").innerHTML += '<img class="flipped" src="Cards/Flipped.svg">';
 
 		} else {
@@ -107,7 +107,7 @@ function PutCardInElement(element, addorreplace, card, player, styles) {
 			PID("curcardsholder2").innerHTML = parseInt(PID("curcardsholder2").innerHTML) + 1;
 
 			// replace element with picture.
-			element.innerHTML = '<img src="cards/' + card + '.svg" style="' + styles + '"onclick="' + "cardclicked('2" + PID("curcardsholder2").innerText + "')" + '"' + "id = 'player2" + PID("curcardsholder2").innerHTML + "'>";
+			element.innerHTML = '<img src="Cards/' + card + '.svg" style="' + styles + '"onclick="' + "cardclicked('2" + PID("curcardsholder2").innerText + "')" + '"' + "id = 'player2" + PID("curcardsholder2").innerHTML + "'>";
 			PID("player2cardsflipped").innerHTML += '<img class="flipped" src="Cards/Flipped.svg">';
 
 
@@ -118,7 +118,7 @@ function PutCardInElement(element, addorreplace, card, player, styles) {
 			PID("curcardsholder1").innerHTML = parseInt(PID("curcardsholder1").innerHTML) + 1;
 
 			//adds the html for the card to the element
-			element.innerHTML += '<img src="cards/' + card + '.svg" style="' + styles + '"onclick="' + "cardclicked('1" + PID("curcardsholder1").innerText + "')" + '"' + "id = 'player1" + PID("curcardsholder1").innerHTML + "'>";
+			element.innerHTML += '<img src="Cards/' + card + '.svg" style="' + styles + '"onclick="' + "cardclicked('1" + PID("curcardsholder1").innerText + "')" + '"' + "id = 'player1" + PID("curcardsholder1").innerHTML + "'>";
 			document.getElementById("1"+parseCard(1,parseInt(PID("curcardsholder1").innerHTML))[1]).appendChild(document.getElementById('player1' + PID("curcardsholder1").innerHTML))
 			PID("player1cardsflipped").innerHTML += '<img class="flipped" src="Cards/Flipped.svg">';
 
@@ -126,7 +126,7 @@ function PutCardInElement(element, addorreplace, card, player, styles) {
 			//adds one to the curcard holder for player 2
 			PID("curcardsholder2").innerHTML = parseInt(PID("curcardsholder2").innerHTML) + 1;
 
-			element.innerHTML += '<img src="cards/' + card + '.svg" style="' + styles + '"onclick="' + "cardclicked('2" + PID("curcardsholder1").innerText + "')" + '"' + "id = 'player2" + PID("curcardsholder2").innerHTML + "'>";
+			element.innerHTML += '<img src="Cards/' + card + '.svg" style="' + styles + '"onclick="' + "cardclicked('2" + PID("curcardsholder1").innerText + "')" + '"' + "id = 'player2" + PID("curcardsholder2").innerHTML + "'>";
 			document.getElementById("2"+parseCard(2,parseInt(PID("curcardsholder1").innerHTML))[1]).appendChild(document.getElementById('player2' + PID("curcardsholder2").innerHTML))
 			PID("player2cardsflipped").innerHTML += '<img class="flipped" src="Cards/Flipped.svg">';
 
@@ -303,7 +303,7 @@ function moveCard(player, number) {
 	var element = document.createElement("img")
 
 	//change src
-	element.src = "cards/" + parsed[0] + ".svg";
+	element.src = "Cards/" + parsed[0] + ".svg";
 
 	//change styles
 	element.style.height = "300px";
