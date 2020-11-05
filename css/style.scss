@@ -1,0 +1,203 @@
+/*Varibles*/
+$backgrounds: #efefef;
+$background-color:$backgrounds;
+$popup-background:#cfcfcf99;
+$startingscreen-background:$backgrounds;
+
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*Styles*/
+#middlecard {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+}
+
+#middlecard:hover {
+  -webkit-transform: scale(1.07, 1.07);
+  transform: scale(1.07, 1.07);
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+}
+
+#middle {
+  // height: 300px;
+  // position: absolute;
+//  top: 30vh;
+  // left: 43vw;
+  position: absolute;  left: 50%;  top: 50%;  transform: translate(-50%, -50%);
+}
+
+#player1cards {
+
+  position: absolute;
+  top: 3vh;
+  width: 100vw;
+  text-align: center;
+}
+#player1cards div,#player2cards div{
+  display:inline;
+}
+#player1cardsflipped {
+  position: absolute;
+  top: 3vh;
+  width: 100vw;
+  text-align: center;
+}
+
+#player2cardsflipped {
+  position: absolute;
+  bottom: 3vh;
+  width: 100vw;
+  text-align: center;
+}
+#player2cards {
+
+  position: absolute;
+  bottom: 3vh;
+  width: 100vw;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+}
+
+body {
+  background: $background-color;
+  height:100vh;
+  width:100vw;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+#popup {
+  background-color: $popup-background;
+  width: 50vw;
+  height: 50vh;
+  display: none;
+  position: fixed;
+  left: 23vw;
+  top: 20vh;
+
+  p {
+    margin-top: 20vh;
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  button {
+    margin-left: 17vw;
+    margin-top: 15vh;
+    display: block;
+    width: 20vw;
+    height: 10vh;
+    border-radius: 5vw;
+    text-align: center;
+    font-size: 2em;
+  }
+}
+#panda{
+  font-size:10vh;
+  font-weight:bold;
+  color:green;
+  text-shadow: 4px 4px 20px #aaa4a4;
+}
+#icon{
+  position:fixed;
+  top:1vh;
+  left:1vw;
+  width:15vh;
+  height:15vh;
+}
+#startingscreen {
+  width: 100vw;
+  height: 100vh;
+  background: url("../Cards/Logo_Crown.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: -7vh;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  
+}
+
+#start {
+  width: 30vw;
+  height: 10vh;
+  border-radius: 4vw;
+  font-size: 2em;
+  background-color:#efefef;
+  border:3px solid #d2d2d2;
+  margin-top:85vh;
+  margin-left:2vw;
+}
+
+button:focus {
+  outline: 0;
+}
+
+
+#player1cards img {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+}
+
+#player1cards img:hover {
+  z-index: 100000;
+  -webkit-transform: translate(0px, 3vh);
+  transform: translate(0px, 3vh);
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+}
+
+#player2cards img {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+}
+
+#player2cards img:hover {
+  z-index: 100000;
+  -webkit-transform: translate(0px, -3vh);
+  transform: translate(0px, -3vh);
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+}
+
+#player1cards img,
+#player2cards img {
+  display: inline-block;
+  margin-left: -50px;
+}
+
+.flipped {
+  display: inline-block;
+  margin-left: -50px;
+  height: 200px;
+}
+
+/*# sourceMappingURL=style.css.map */

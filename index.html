@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/classes.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title></title>
+</head>
+<body>
+<div id= "player1cards">
+	<div id="1Wild"></div>
+	<div id="1Green"></div>
+	<div id="1Blue"></div>
+	<div id="1Yellow"></div>
+	<div id="1Red"></div>
+</div>
+<div id= "player1cardsflipped"></div>
+<div id= "player2cards">
+	<div id="2Wild"></div>
+	<div id="2Green"></div>
+	<div id="2Blue"></div>
+	<div id="2Yellow"></div>
+	<div id="2Red"></div>
+</div>
+<div id= "player2cardsflipped"></div>
+<div id="middle"></div>
+<img id="icon" src="./Cards/Logo_2_Fluid.svg">
+<div id = "popup">
+	<p id ="fliptext">The Other Player Should Press Next Turn So They Can See Thier Cards</p>
+<button id ="flipbutton">Next Turn</button>
+</div>
+<div id= "curplayerholder" class="hidden">1</div>
+<div id="curcardsholder2" class = "hidden">0</div>
+<div id="curcardsholder1" class = "hidden">0</div>
+<div id="startingscreen"><button id = "start">Start</button></div>
+<img src="Cards/Flipped.svg" style="height:200px;margin-top:35vh;margin-left:5vw;display:none;" id ="draw" onclick="draw()">
+<script src="js/varibles.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
